@@ -2,9 +2,9 @@ package com.gordolio.controls.sample;
 
 import com.gordolio.controls.TagControl;
 import javafx.geometry.Insets;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.HBox;
 
-public class MainPane extends Pane {
+public class MainPane extends HBox {
 
     private TagControl tagControl;
 
