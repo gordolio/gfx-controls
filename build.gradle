@@ -1,0 +1,21 @@
+
+apply plugin:'java'
+apply plugin:'application'
+apply plugin:'maven'
+
+mainClassName = 'com.gordolio.controls.sample.Main'
+
+group = projectGroup
+version = projectVersion
+sourceCompatibility = projectSourceCompatibility
+
+repositories {
+   mavenLocal()
+   mavenCentral()
+}
+
+dependencies {
+   //compile 'org.apache.commons:commons-lang3:3.5'
+   compile fileTree(System.properties['java.home']).include('**/jfxrt.jar')
+}
+
